@@ -1,0 +1,35 @@
+@keyframes waveEffect {
+    0% { transform: translateY(0px) scaleX(1); }
+    50% { transform: translateY(-8px) scaleX(1.02); }
+    100% { transform: translateY(0px) scaleX(1); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.banner {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #d32f2f, #b71c1c);
+    animation: waveEffect 3s infinite ease-in-out;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 8px;
+    min-height: 80px;
+}
+
+.typing-char {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    display: inline-block;
+}
